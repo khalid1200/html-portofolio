@@ -1,0 +1,116 @@
+:root {
+    --primary:rgb(255, 247, 244);
+    --bgColor:rgb(0, 109, 119);
+    --navbar:rgb(237, 246, 249);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ubuntu', sans-serif;
+    color: var(--primary);
+}
+
+.navbar {
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    position:fixed;
+    z-index: 99999;
+    backdrop-filter: blur(25px);
+}
+
+.navbar-logo {
+    position: relative;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar .navbar-contact {
+    position: relative;
+    right: 10rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 3px solid var(--primary);
+    padding: 0.5rem;
+}
+
+a:visited {
+    color: var(--navbar)
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    background-color: var(--bgColor);
+    position: relative;
+    z-index: -2;
+}
+
+.text-main {
+    position: relative;
+    top: 15rem;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-main .greeting {
+    margin: 0 5rem;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text-main .greeting span {
+    color: var(--bgColor);
+}
+
+.text-main .description-about-me {
+    margin: 2rem 5rem;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 35%;
+}
+
+.text-main button{
+    margin: 0rem 5rem;
+    font-size: 2rem;
+    background-color: var(--primary);
+    color: var(--bgColor);
+    width: 15rem;
+    height: 4rem;
+    border: 0;
+    box-shadow: 3px 5px 5px 1px rgb(93, 93, 93);
+}
+
+.main-picture {
+    position:relative;
+    right: 19.5rem;
+    z-index: -1;
+}
+
+.main-picture-asset {
+    position: relative;
+    top: 15rem;
+    height: 74vh;
+    width: 32vw;
+}
